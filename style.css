@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #C9DABF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url('pictures/ponyo.jpg');
+
+}
+
+h1 {
+    color: rgba(230, 238, 2, 0.827);
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3{
+    color: rgba(252, 188, 85, 0.999);
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+}
+
+/* Form Container */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form Labels and Inputs */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #020201;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #fff200;
+    outline: none;
+}
+
+/* Button Styles */
+button, .btn {
+    background-color: transparent;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+button:hover, .btn:hover {
+    background-color: #247111;
+    transform: translateY(-2px);
+}
+
+button:active, .btn:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+
+/* Profile Page Styling */
+.profile-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-container a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.profile-container a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.profile-container a.delete {
+    background-color: #d9534f;
+}
+
+.profile-container a.delete:hover {
+    background-color: #c9302c;
+}
+
+/* Error and Success Messages */
+.error-message {
+    color: #d9534f; /* Red */
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.success-message {
+    color: #28a745; /* Green */
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Loading Indicator */
+.loading {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loading.active {
+    display: block;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    form {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .profile-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    button,
+    .btn {
+        padding: 10px;
+    }
+
+    .profile-container a {
+        padding: 8px 16px;
+    }
+}
